@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 250px;
+    height: 350px;
+}
+
+.book img {
+    width: 200px;
+    height: 300px;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#text h1 {
+    font-size: 30px;
+}
+
+#text h2 {
+    font-weight: 400;
+}
+
+#books {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#book1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 18px;
+    color: red;
+}
+
+/* Para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    #books {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 150px 30px;
+    }
+}
